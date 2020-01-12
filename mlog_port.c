@@ -5,7 +5,7 @@
 void get_time_str(char *time_buf)
 {
 	SYSTEMTIME currentTime;
-    GetSystemTime(&currentTime);
+    GetLocalTime(&currentTime);
     sprintf(time_buf,"%04u.%02u.%02u %02u:%02u:%02u.%02u",           
      currentTime.wYear,currentTime.wMonth,currentTime.wDay,
      currentTime.wHour,currentTime.wMinute,currentTime.wSecond,
